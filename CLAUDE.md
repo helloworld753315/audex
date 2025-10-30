@@ -27,8 +27,15 @@ https://github.com/helloworld753315/ffmpeg-scripts
 - Go 1.21以上
 
 ### 主要ライブラリ
+
+**Phase 1 (必須):**
 - `github.com/abema/go-mp4` (MIT) - MP4コンテナ操作、音声ストリーム抽出
 - `github.com/dhowden/tag` (Unlicense) - メタデータ・アートワーク読み書き
+- `github.com/urfave/cli/v2` (MIT) - CLIフレームワーク
+
+**Phase 2 (機能拡張時):**
+- `github.com/schollz/progressbar/v3` (MIT) - プログレスバー表示
+- シェル補完スクリプト生成機能（urfave/cli組み込み）
 
 ## アーキテクチャ
 
