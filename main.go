@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/helloworld753315/audex/converter"
 	"github.com/urfave/cli/v2"
 )
 
@@ -35,5 +36,22 @@ func main() {
 }
 
 func convert(input, output string) error {
-	return fmt.Errorf("not implemented yet")
+	// メタデータを読み取る
+	metadata, err := converter.ReadMetadata(input)
+	if err != nil {
+		return fmt.Errorf("failed to read metadata: %w", err)
+	}
+
+	// デバッグ: メタデータを表示
+	fmt.Printf("Title: %s\n", metadata.Title)
+	fmt.Printf("Artist: %s\n", metadata.Artist)
+	fmt.Printf("Album: %s\n", metadata.Album)
+	if metadata.Picture != nil {
+		fmt.Printf("Artwork: %s (%d bytes)\n", metadata.Picture.MIMEType, len(metadata.Picture.Data))
+	}
+
+	// TODO: 音声ストリーム抽出
+	// TODO: メタデータ書き込み
+
+	return fmt.Errorf("conversion not fully implemented yet")
 }
