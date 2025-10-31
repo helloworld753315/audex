@@ -30,7 +30,7 @@ https://github.com/helloworld753315/ffmpeg-scripts
 
 **Phase 1 (必須):**
 - `github.com/abema/go-mp4` (MIT) - MP4コンテナ操作、音声ストリーム抽出
-- `github.com/dhowden/tag` (Unlicense) - メタデータ・アートワーク読み書き
+- `github.com/dhowden/tag` (BSD-2-Clause) - メタデータ・アートワーク読み書き
 - `github.com/urfave/cli/v2` (MIT) - CLIフレームワーク
 
 **Phase 2 (機能拡張時):**

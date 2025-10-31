@@ -1,0 +1,42 @@
+# Binaries
+audex
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of go coverage
+*.out
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test data ('��MP4/M4Aա��d)
+testdata/*.mp4
+testdata/*.m4a
+
+# ����ա��n����1�Y�4
+!testdata/simple.mp4
+!testdata/with_metadata.mp4
+
+# Build artifacts
+dist/
+build/

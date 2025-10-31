@@ -2,7 +2,10 @@ module github.com/helloworld753315/audex
 
 go 1.21
 
-require github.com/urfave/cli/v2 v2.27.5
+require (
+	github.com/dhowden/tag v0.0.0-20240417053706-3d75831295e8
+	github.com/urfave/cli/v2 v2.27.5
+)
 
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.5 // indirect
